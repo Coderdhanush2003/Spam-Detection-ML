@@ -22,13 +22,6 @@ The dataset contains 5,572 individual message entries featuring:
 5. **Model Selection & Training:** Training a `MultinomialNB` (Multinomial Naive Bayes) classifier—an algorithm highly optimal for discrete word count frequencies.
 6. **Evaluation:** Metric benchmarking using overall classification accuracy alongside a breakdown of precision, recall, and F1-scores to monitor false-positive vs. false-negative trade-offs.
 
-## 📈 Model Performance Report
-
-| Model | Class | Precision | Recall | F1-Score | Overall Accuracy |
-| --- | --- | --- | --- | --- | --- |
-| **Multinomial Naive Bayes** | **0 (Ham)** | 0.99 | 0.99 | 0.99 | **97.9%** |
-|  | **1 (Spam)** | 0.91 | 0.94 | 0.92 |  |
-
 ### Key Takeaway:
 
 The Naive Bayes architecture proves highly effective for this text classification task, maintaining an exceptional **99% precision and recall for legitimate messages**. While spam detection pulls a slightly lower precision (91%) due to a few borderline promotional phrases crossing boundaries, the model captures **94% of incoming spam (recall)**, establishing it as a reliable baseline filter.
